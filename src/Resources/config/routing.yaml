@@ -1,0 +1,7 @@
+url_shortener_bundle_generate:
+    path: /url-shortener/generate
+    defaults: { _controller: Daday\UrlShortenerBundle\Controller\UrlShortenerBundleControler::generate }
+
+url_shortener_bundle_redirect:
+    path: /usrt/{shortCode}
+    defaults: { _controller: Daday\UrlShortenerBundle\Controller\UrlShortenerBundleControler::index }

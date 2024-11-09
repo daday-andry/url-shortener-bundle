@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Daday\UrlShortenerBundle\Controller\UrlShortenerBundleControler:
+    tags : ['controller.service_arguments']
+    arguments: ['@url.shortener.urlrepository']
+    
+  url.shortener.urlrepository:
+    class: Daday\UrlShortenerBundle\Repository\UrlRepository
+    public: true
+    arguments: ['@doctrine']

@@ -1,0 +1,2 @@
+{% set _url =  absolute_url(path('url_shortener_bundle_redirect', {shortCode: code })) %}
+<a href="{{ _url }}" target="__blank">{{ _url }}</a>

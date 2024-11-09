@@ -1,0 +1,31 @@
+{
+    "name": "daday/url-shortener-bundle",
+    "type": "symfony-bundle",
+    "description": "Url Shortener for Symfony",
+    "keywords": ["url",
+        "shortener",
+        "url short",
+        "url shortener",
+         "symfony", 
+         "bundle"
+    ],
+    "authors": [{
+        "name": "Daday Andry",
+        "email": "andrysahaedena@gmail.com"
+    }],
+    "license": "MIT",
+    "require": {
+        "php": ">=8.0",
+        "symfony/framework-bundle": "^5.0 || ^6.0 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Daday\\UrlShortenerBundle\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
+        }
+    }
+}
